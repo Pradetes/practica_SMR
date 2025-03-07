@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenidos a mi perfil ficticio!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <h1 style="color: cyan;">¡Hola, soy El barón de la Birra!</h1>
+        <img src="images/avatar.jpg" alt="Avatar de El barón de la Birra" width="300" height="300" class="avatar" loading="lazy">
+        <p>Este perfil ficticio está hecho usando un poco de código HTML + CSS.</p>
+
+        <form>
+            <label for="name">Pseudónimo:</label>
+            <input type="text" id="name" name="name" placeholder="Tu pseudónimo" required maxlength="50" aria-label="Introduce tu nombre o pseudónimo">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required aria-label="Introduce tu correo electrónico">
+            
+            <label for="message">Sobre mí:</label>
+            <textarea id="message" name="message" placeholder="Describe aquí quién eres..." rows="4" cols="40" maxlength="200" aria-label="Describe tu perfil"></textarea>
+            
+            <br>
+            <button type="submit" aria-label="Enviar perfil">Enviar</button>
+            <br>
+            <hr>
+            
+            <div class="enlaces_redes">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/josepradosrico" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin_1.png" alt="LinkedIn">
+                </a>
+                <a href="https://x.com/praditis" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+            </div>          
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+

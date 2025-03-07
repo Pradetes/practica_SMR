@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #121212, #3b3b3b);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: cyan;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.5);
+}
+
+.profile-card {
+    background: #252525;
+    padding: 25px;
+    max-width: 420px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+.profile-card p {
+    color: #bbb; /* Gris suave para dar un buen contraste con el fondo oscuro */
+    font-size: 1.1rem; /* Un tamaño de fuente ligeramente mayor */
+    line-height: 1.5; /* Mayor espacio entre líneas para facilitar la lectura */
+    margin-top: 10px; /* Espacio superior para separarlo del avatar */
+    font-weight: 300; /* Ligero grosor para un aspecto más limpio */
+    text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.2); /* Sombra sutil para darle un toque más moderno */
+}
+
+.profile-card p:hover {
+    color: #00adb5; /* Cambia a cian suave al pasar el ratón */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+label {
+    font-size: 1.1rem;
+    color: #00adb5; /* Color cian para dar contraste */
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Asegura que el texto esté sobre el campo de entrada */
+    text-shadow: 1px 1px 4px rgba(0, 255, 255, 0.3); /* Sombra sutil */
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #00e0e0; /* Color ligeramente más brillante al pasar el ratón */
+    cursor: pointer; /* Cambio de cursor para indicar interactividad */
+    transition: color 0.3s ease;
+}
+
+input:focus + label, textarea:focus + label {
+    color: cyan; /* Resalta el color cuando el campo está enfocado */
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    animation: balanceo 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes balanceo {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #00adb5;
+    background: #333;
+    color: white;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: cyan;
+    outline: none;
+}
+
+button {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #007a85;
+    transform: scale(1.25);
+}
+
+
+.enlaces_redes img {
+    width: 45px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enlaces_redes img:hover {
+    transform: scale(1.3);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
